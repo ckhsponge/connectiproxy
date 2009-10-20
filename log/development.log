@@ -1,0 +1,578 @@
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:24:41) [GET]
+Rendering users/new
+Completed in 48ms (View: 47 | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:42:06) [GET]
+Rendering template within layouts/users
+Rendering users/new
+
+ActionView::TemplateError (uninitialized constant ActionView::Base::CompiledTemplates::Facebooker) on line #15 of app/views/layouts/users.haml:
+12:     = @content_for_layout
+13: 
+14:     = javascript_tag "window.api_key = '#{Facebooker.api_key}';"
+15:     = javascript_tag "window.facebook_signed_in_url = '#{ENV['FACEBOOK_SIGNED_IN_URL']}';"
+16:     /= javascript_tag "window.onload = function() { facebook_onload(#{!!@facebook_user}); };"
+17:     = javascript_include_tag "facebook_require"
+
+    app/views/layouts/users.haml:15:in `_run_haml_app47views47layouts47users46haml'
+    haml (2.2.9) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.9) lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (2.2.9) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (57.2ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:43:17) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 63ms (View: 16 | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:46:43) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 7ms (View: 2 | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:47:56) [GET]
+
+ArgumentError (wrong number of arguments (0 for 1)):
+  app/controllers/users_controller.rb:3:in `load_configuration'
+  app/controllers/users_controller.rb:3:in `new'
+  haml (2.2.9) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (120.1ms)
+Rendered rescues/_request_and_response (1.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:48:07) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 9ms (View: 3 | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:48:12) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 9ms (View: 5 | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:48:32) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 11ms (View: 2 | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:48:55) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 9ms (View: 2 | 200 OK [http://localhost/users/new]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:49:12) [GET]
+  Parameters: {"session"=>"{\"session_key\":\"3.FEqFNy0E0pt0Kkw79FtU9A__.86400.1256108400-624804174\",\"uid\":\"624804174\",\"expires\":1256108400,\"secret\":\"3q2JLLIwnWRzy_Gyfi6lGQ__\",\"sig\":\"3321b9bf2c36e1b7f1b30bb3e754aca1\"}", "next"=>"http://localhost:3000/users/facebook_sign_in/xd_receiver.htm?fb_login&fname=_opener&guid=0.6833338604335544"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?session=%7B%22session_key%22%3A%223.FEqFNy0E0pt0Kkw79FtU9A__.86400.1256108400-624804174%22%2C%22uid%22%3A%22624804174%22%2C%22expires%22%3A1256108400%2C%22secret%22%3A%223q2JLLIwnWRzy_Gyfi6lGQ__%22%2C%22sig%22%3A%223321b9bf2c36e1b7f1b30bb3e754aca1%22%7D&next=http%3A%2F%2Flocalhost%3A3000%2Fusers%2Ffacebook_sign_in%2Fxd_receiver.htm%3Ffb_login%26fname%3D_opener%26guid%3D0.6833338604335544]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-19 23:53:08) [GET]
+  Parameters: {"key"=>""}
+
+ActionController::RoutingError (No route matches "/rss/events/ckh" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:54:43) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 914ms | 302 Found [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:55:01) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 31ms (View: 27 | 200 OK [http://localhost/users/new]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:55:05) [GET]
+  Parameters: {"session"=>"{\"session_key\":\"3.FEqFNy0E0pt0Kkw79FtU9A__.86400.1256108400-624804174\",\"uid\":624804174,\"expires\":1256108400,\"secret\":\"3q2JLLIwnWRzy_Gyfi6lGQ__\",\"sig\":\"3321b9bf2c36e1b7f1b30bb3e754aca1\"}", "next"=>"http://localhost:3000/users/facebook_sign_in/xd_receiver.htm?fb_login&fname=_opener&guid=0.021424773201746183"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?session=%7B%22session_key%22%3A%223.FEqFNy0E0pt0Kkw79FtU9A__.86400.1256108400-624804174%22%2C%22uid%22%3A624804174%2C%22expires%22%3A1256108400%2C%22secret%22%3A%223q2JLLIwnWRzy_Gyfi6lGQ__%22%2C%22sig%22%3A%223321b9bf2c36e1b7f1b30bb3e754aca1%22%7D&next=http%3A%2F%2Flocalhost%3A3000%2Fusers%2Ffacebook_sign_in%2Fxd_receiver.htm%3Ffb_login%26fname%3D_opener%26guid%3D0.021424773201746183]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:55:05) [GET]
+  Parameters: {"auth_token"=>"5779f7b4d0a4738c08b84519e68f54f3"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=5779f7b4d0a4738c08b84519e68f54f3]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:55:05) [GET]
+  Parameters: {"auth_token"=>"d27ea898f97cdc60e9ee19fd42ae88f1"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=d27ea898f97cdc60e9ee19fd42ae88f1]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:55:06) [GET]
+  Parameters: {"auth_token"=>"1728e05bd62916049e9c7bb3363dbe51"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=1728e05bd62916049e9c7bb3363dbe51]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:55:06) [GET]
+  Parameters: {"auth_token"=>"ebfdd8bd20adb469826824fa83627c3d"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=ebfdd8bd20adb469826824fa83627c3d]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:55:06) [GET]
+  Parameters: {"auth_token"=>"1e4d9d62fea98ba19aeb136bcdbb816f"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=1e4d9d62fea98ba19aeb136bcdbb816f]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:55:07) [GET]
+  Parameters: {"auth_token"=>"378f142b9afaeffafeece16938947e75"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=378f142b9afaeffafeece16938947e75]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:55:07) [GET]
+  Parameters: {"auth_token"=>"d29649f192bf5e0e08ca53dd23feb873"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=d29649f192bf5e0e08ca53dd23feb873]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:55:07) [GET]
+  Parameters: {"auth_token"=>"e19c7448db9ce33688249832e5343a25"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=e19c7448db9ce33688249832e5343a25]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:55:08) [GET]
+  Parameters: {"auth_token"=>"3bef1e18509d6737effdff2cfc8855f9"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=3bef1e18509d6737effdff2cfc8855f9]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:56:21) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 790ms | 302 Found [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:56:27) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 20ms (View: 16 | 200 OK [http://localhost/users/new]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:56:37) [GET]
+  Parameters: {"session"=>"{\"session_key\":\"3.FEqFNy0E0pt0Kkw79FtU9A__.86400.1256108400-624804174\",\"uid\":624804174,\"expires\":1256108400,\"secret\":\"3q2JLLIwnWRzy_Gyfi6lGQ__\",\"sig\":\"3321b9bf2c36e1b7f1b30bb3e754aca1\"}", "next"=>"http://localhost:3000/users/facebook_sign_in/xd_receiver.htm?fb_login&fname=_opener&guid=0.608254031772274"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 2ms | 302 Found [http://localhost/facebook/sign_in?session=%7B%22session_key%22%3A%223.FEqFNy0E0pt0Kkw79FtU9A__.86400.1256108400-624804174%22%2C%22uid%22%3A624804174%2C%22expires%22%3A1256108400%2C%22secret%22%3A%223q2JLLIwnWRzy_Gyfi6lGQ__%22%2C%22sig%22%3A%223321b9bf2c36e1b7f1b30bb3e754aca1%22%7D&next=http%3A%2F%2Flocalhost%3A3000%2Fusers%2Ffacebook_sign_in%2Fxd_receiver.htm%3Ffb_login%26fname%3D_opener%26guid%3D0.608254031772274]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:56:37) [GET]
+  Parameters: {"auth_token"=>"606fbb3799a588947b338b6dda75819c"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=606fbb3799a588947b338b6dda75819c]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:56:37) [GET]
+  Parameters: {"auth_token"=>"f56f4df2db1b23df9a78d7b87d6e4d66"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=f56f4df2db1b23df9a78d7b87d6e4d66]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:56:37) [GET]
+  Parameters: {"auth_token"=>"74b7c923f2ac89b27447a158d4188dbc"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=74b7c923f2ac89b27447a158d4188dbc]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:56:38) [GET]
+  Parameters: {"auth_token"=>"7265bffa5bd77941c74906eab67c9a31"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=7265bffa5bd77941c74906eab67c9a31]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:56:38) [GET]
+  Parameters: {"auth_token"=>"73b36edab0be188e07df76485fa29a31"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=73b36edab0be188e07df76485fa29a31]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:56:39) [GET]
+  Parameters: {"auth_token"=>"02bfd496ee1c1a13f66683c5ca8bfba5"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=02bfd496ee1c1a13f66683c5ca8bfba5]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:56:39) [GET]
+  Parameters: {"auth_token"=>"d0708d306831fafb9c8ea29e70936901"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=d0708d306831fafb9c8ea29e70936901]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:56:39) [GET]
+  Parameters: {"auth_token"=>"1c75e353dcaeba8a1e588a5ee5b2e02d"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=1c75e353dcaeba8a1e588a5ee5b2e02d]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:56:40) [GET]
+  Parameters: {"auth_token"=>"3c9efccbd85677bbada89d7e5a0bbc3b"}
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Filter chain halted as [:authenticate] rendered_or_redirected.
+Completed in 1ms | 302 Found [http://localhost/facebook/sign_in?auth_token=3c9efccbd85677bbada89d7e5a0bbc3b]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:57:19) [GET]
+Redirected to http://localhost:3000/
+Filter chain halted as [:authenticate_facebook] rendered_or_redirected.
+Completed in 504ms | 302 Found [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-19 23:57:23) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 5ms (View: 2 | 200 OK [http://localhost/users/new]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-19 23:57:28) [GET]
+  Parameters: {"session"=>"{\"session_key\":\"3.FEqFNy0E0pt0Kkw79FtU9A__.86400.1256108400-624804174\",\"uid\":624804174,\"expires\":1256108400,\"secret\":\"3q2JLLIwnWRzy_Gyfi6lGQ__\",\"sig\":\"3321b9bf2c36e1b7f1b30bb3e754aca1\"}", "next"=>"http://localhost:3000/users/facebook_sign_in/xd_receiver.htm?fb_login&fname=_opener&guid=0.7767502595141133"}
+
+NoMethodError (undefined method `secure_with_token!' for #<FacebookController:0x25808e8>):
+  app/controllers/facebook_controller.rb:11:in `sign_in'
+  haml (2.2.9) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (42.1ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:06:40) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 139ms (View: 20 | 200 OK [http://localhost/users/new]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-20 00:06:49) [GET]
+  Parameters: {"session"=>"{\"session_key\":\"3.4ap2S2uZgc5erqYsEfwKzA__.86400.1256112000-624804174\",\"uid\":624804174,\"expires\":1256112000,\"secret\":\"jRggmQnDIB71k3MzqX0xGw__\",\"sig\":\"b7c131aaf9a3a8542495bde8e5a6f14f\"}", "next"=>"http://localhost:3000/users/facebook_sign_in/xd_receiver.htm?fb_login&fname=_opener&guid=0.8332843198252131"}
+
+RuntimeError (no facebook session):
+  app/controllers/facebook_controller.rb:12:in `sign_in'
+  haml (2.2.9) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (42.2ms)
+Rendered rescues/_request_and_response (1.6ms)
+Rendering /Users/ckh/dev/connectiproxy/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:08:12) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 8ms (View: 2 | 200 OK [http://localhost/users/new]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-20 00:08:20) [GET]
+  Parameters: {"session"=>"{\"session_key\":\"3.4ap2S2uZgc5erqYsEfwKzA__.86400.1256112000-624804174\",\"uid\":624804174,\"expires\":1256112000,\"secret\":\"jRggmQnDIB71k3MzqX0xGw__\",\"sig\":\"b7c131aaf9a3a8542495bde8e5a6f14f\"}", "next"=>"http://localhost:3000/users/facebook_sign_in/xd_receiver.htm?fb_login&fname=_opener&guid=0.7447236182889769"}
+
+RuntimeError (no facebook session):
+  app/controllers/facebook_controller.rb:12:in `sign_in'
+  haml (2.2.9) lib/sass/plugin/rails.rb:19:in `process'
+
+Rendered rescues/_trace (45.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering /Users/ckh/dev/connectiproxy/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:10:49) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 120ms (View: 17 | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:11:19) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 15ms (View: 2 | 200 OK [http://localhost/users/new]
+
+
+Processing FacebookController#authenticate (for 127.0.0.1 at 2009-10-20 00:11:28) [GET]
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Completed in 3ms | 302 Found [http://localhost/facebook/authenticate]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-20 00:11:28) [GET]
+  Parameters: {"auth_token"=>"dbb02ac4ed9093963753d15354645f81"}
+facebook.auth.getSession (0.378026008605957) generate_session_secret = 0, auth_token = dbb02ac4ed9093963753d15354645f81
+Redirected to http://localhost:3000/users/new
+Completed in 381ms | 302 Found [http://localhost/facebook/sign_in?auth_token=dbb02ac4ed9093963753d15354645f81]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:11:28) [GET]
+facebook.auth.createToken (0.339056968688965) 
+facebook.auth.getSession (0) Facebooker::Session::MissingOrInvalidParameter: Invalid parameter: generate_session_secret = 0, auth_token = a6ed5fd9784bd38af31caadebce601d7
+Redirected to http://localhost:3000/
+Filter chain halted as [:authenticate_facebook] rendered_or_redirected.
+Completed in 695ms | 302 Found [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:12:04) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 15ms (View: 2 | 200 OK [http://localhost/users/new]
+
+
+Processing FacebookController#authenticate (for 127.0.0.1 at 2009-10-20 00:12:07) [GET]
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Completed in 2ms | 302 Found [http://localhost/facebook/authenticate]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-20 00:12:07) [GET]
+  Parameters: {"auth_token"=>"2a4d6b82b8a88812c340d1ce66466425"}
+facebook.auth.getSession (0.373111009597778) generate_session_secret = 0, auth_token = 2a4d6b82b8a88812c340d1ce66466425
+Redirected to http://localhost:3000/users/new
+Completed in 376ms | 302 Found [http://localhost/facebook/sign_in?auth_token=2a4d6b82b8a88812c340d1ce66466425]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:12:08) [GET]
+facebook.auth.createToken (0.341022968292236) 
+facebook.auth.getSession (0) Facebooker::Session::MissingOrInvalidParameter: Invalid parameter: generate_session_secret = 0, auth_token = b7f18cb9748ca567114e06f206da6097
+Redirected to http://localhost:3000/
+Filter chain halted as [:authenticate_facebook] rendered_or_redirected.
+Completed in 666ms | 302 Found [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:13:17) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 286ms (View: 275 | 200 OK [http://localhost/users/new]
+
+
+Processing FacebookController#authenticate (for 127.0.0.1 at 2009-10-20 00:13:24) [GET]
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Completed in 3ms | 302 Found [http://localhost/facebook/authenticate]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-20 00:13:24) [GET]
+  Parameters: {"auth_token"=>"c0f367135409cd3e19eba7497be36f55"}
+facebook.auth.getSession (0.316630840301514) generate_session_secret = 0, auth_token = c0f367135409cd3e19eba7497be36f55
+Redirected to http://localhost:3000/users/list
+Completed in 319ms | 302 Found [http://localhost/facebook/sign_in?auth_token=c0f367135409cd3e19eba7497be36f55]
+
+
+Processing UsersController#list (for 127.0.0.1 at 2009-10-20 00:13:24) [GET]
+facebook.auth.createToken (0.519651889801025) 
+facebook.auth.getSession (0) Facebooker::Session::MissingOrInvalidParameter: Invalid parameter: generate_session_secret = 0, auth_token = 6860d67084d5036a9b1f334391a8a82f
+Redirected to http://localhost:3000/
+Filter chain halted as [:authenticate_facebook] rendered_or_redirected.
+Completed in 735ms | 302 Found [http://localhost/users/list]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:15:14) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 8ms (View: 2 | 200 OK [http://localhost/users/new]
+
+
+Processing FacebookController#authenticate (for 127.0.0.1 at 2009-10-20 00:15:16) [GET]
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Completed in 2ms | 302 Found [http://localhost/facebook/authenticate]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-20 00:15:16) [GET]
+  Parameters: {"auth_token"=>"becff8c7e31b856f5b2e54f367b0efd0"}
+facebook.auth.getSession (0.295400142669678) generate_session_secret = 0, auth_token = becff8c7e31b856f5b2e54f367b0efd0
+facebook.users.getInfo (0.545431852340698) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Redirected to http://localhost:3000/users/list
+Completed in 844ms | 302 Found [http://localhost/facebook/sign_in?auth_token=becff8c7e31b856f5b2e54f367b0efd0]
+
+
+Processing UsersController#list (for 127.0.0.1 at 2009-10-20 00:15:17) [GET]
+facebook.auth.createToken (0.219197988510132) 
+facebook.auth.getSession (0) Facebooker::Session::MissingOrInvalidParameter: Invalid parameter: generate_session_secret = 0, auth_token = 90610d7950554c96a7b6b8f15a54bf16
+Redirected to http://localhost:3000/
+Filter chain halted as [:authenticate_facebook] rendered_or_redirected.
+Completed in 495ms | 302 Found [http://localhost/users/list]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:16:41) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 13ms (View: 4 | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:16:44) [GET]
+Rendering template within layouts/users
+Rendering users/new
+Completed in 6ms (View: 2 | 200 OK [http://localhost/users/new]
+
+
+Processing FacebookController#authenticate (for 127.0.0.1 at 2009-10-20 00:16:49) [GET]
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Completed in 3ms | 302 Found [http://localhost/facebook/authenticate]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-20 00:16:49) [GET]
+  Parameters: {"auth_token"=>"44ffe7009a79420fb5bf58bbff61740c"}
+facebook.auth.getSession (0.258199214935303) generate_session_secret = 0, auth_token = 44ffe7009a79420fb5bf58bbff61740c
+facebook.users.getInfo (0.371490955352783) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Redirected to http://localhost:3000/users/list
+Completed in 633ms | 302 Found [http://localhost/facebook/sign_in?auth_token=44ffe7009a79420fb5bf58bbff61740c]
+
+
+Processing UsersController#list (for 127.0.0.1 at 2009-10-20 00:16:50) [GET]
+facebook.users.getInfo (0.34316086769104) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Rendering template within layouts/users
+Rendering users/list
+Completed in 354ms (View: 7 | 200 OK [http://localhost/users/list]
+
+
+Processing UsersController#list (for 127.0.0.1 at 2009-10-20 00:19:37) [GET]
+facebook.users.getInfo (0.291642904281616) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Rendering template within layouts/users
+Rendering users/list
+Completed in 306ms (View: 8 | 200 OK [http://localhost/users/list]
+
+
+Processing UsersController#list (for 127.0.0.1 at 2009-10-20 00:20:19) [GET]
+facebook.users.getInfo (0.617034912109375) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Rendering template within layouts/users
+Rendering users/list
+Completed in 627ms (View: 7 | 200 OK [http://localhost/users/list]
+
+
+Processing FacebookController#proxy (for 127.0.0.1 at 2009-10-20 00:26:51) [GET]
+  Parameters: {"generate_session_secret"=>"1", "auth_token"=>"b74d3f092d2a69d85867017bbcddeede"}
+facebook.auth.getSession (0.327556133270264) generate_session_secret = 1, auth_token = b74d3f092d2a69d85867017bbcddeede
+Completed in 332ms (View: 1 | 200 OK [http://localhost/facebook/proxy?auth_token=b74d3f092d2a69d85867017bbcddeede&generate_session_secret=1]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 00:33:30) [GET]
+facebook.users.getInfo (0.527956962585449) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Rendering template within layouts/users
+Rendering users/new
+Completed in 534ms (View: 2 | 200 OK [http://localhost/]
+
+
+Processing FacebookController#authenticate (for 127.0.0.1 at 2009-10-20 00:33:35) [GET]
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Completed in 2ms | 302 Found [http://localhost/facebook/authenticate]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-20 00:33:35) [GET]
+  Parameters: {"auth_token"=>"e22f4e28d011272db0604e10249e8f2d"}
+facebook.auth.getSession (0.368745803833008) generate_session_secret = 0, auth_token = e22f4e28d011272db0604e10249e8f2d
+Redirected to http://localhost:3000/users/list
+Completed in 372ms | 302 Found [http://localhost/facebook/sign_in?auth_token=e22f4e28d011272db0604e10249e8f2d]
+
+
+Processing UsersController#list (for 127.0.0.1 at 2009-10-20 00:33:35) [GET]
+facebook.users.getInfo (0.384696960449219) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Rendering template within layouts/users
+Rendering users/list
+Completed in 396ms (View: 8 | 200 OK [http://localhost/users/list]
+
+
+Processing FacebookController#proxy (for 127.0.0.1 at 2009-10-20 00:36:48) [GET]
+  Parameters: {"generate_session_secret"=>"1", "auth_token"=>"bf557c8580328b6014850cb1de23d1d7"}
+facebook.auth.getSession (0.359493017196655) generate_session_secret = 1, auth_token = bf557c8580328b6014850cb1de23d1d7
+Completed in 363ms (View: 1 | 200 OK [http://localhost/facebook/proxy?auth_token=bf557c8580328b6014850cb1de23d1d7&generate_session_secret=1]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-10-20 01:16:54) [GET]
+  Parameters: {"key"=>""}
+
+ActionController::RoutingError (No route matches "/rss/events/ckh" with {:canvas=>false, :method=>:get}):
+  
+
+Rendering /Users/ckh/dev/connectiproxy/vendor/plugins/facebooker/templates/layout.erb (200)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 01:26:06) [GET]
+facebook.users.getInfo (0.435708045959473) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Rendering template within layouts/users
+Rendering users/new
+Completed in 603ms (View: 20 | 200 OK [http://localhost/]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 01:26:13) [GET]
+facebook.users.getInfo (0.349647998809814) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Rendering template within layouts/users
+Rendering users/new
+Completed in 358ms (View: 2 | 200 OK [http://localhost/]
+
+
+Processing FacebookController#authenticate (for 127.0.0.1 at 2009-10-20 01:26:31) [GET]
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Completed in 3ms | 302 Found [http://localhost/facebook/authenticate]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-20 01:26:32) [GET]
+  Parameters: {"auth_token"=>"85d47b0154d461b25cc35bfa54f57533"}
+facebook.auth.getSession (0.555007934570312) generate_session_secret = 0, auth_token = 85d47b0154d461b25cc35bfa54f57533
+Redirected to http://localhost:3000/users/list
+Completed in 558ms | 302 Found [http://localhost/facebook/sign_in?auth_token=85d47b0154d461b25cc35bfa54f57533]
+
+
+Processing UsersController#list (for 127.0.0.1 at 2009-10-20 01:26:32) [GET]
+facebook.users.getInfo (0.239722013473511) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Rendering template within layouts/users
+Rendering users/list
+Completed in 250ms (View: 7 | 200 OK [http://localhost/users/list]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-10-20 01:30:13) [GET]
+facebook.users.getInfo (0.431210041046143) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Rendering template within layouts/users
+Rendering users/new
+Completed in 545ms (View: 18 | 200 OK [http://localhost/]
+
+
+Processing FacebookController#authenticate (for 127.0.0.1 at 2009-10-20 01:30:18) [GET]
+Redirected to http://www.facebook.com/login.php?api_key=ead7f0b3e393397e63cc4ffc32f4abe5&v=1.0
+Completed in 3ms | 302 Found [http://localhost/facebook/authenticate]
+
+
+Processing FacebookController#sign_in (for 127.0.0.1 at 2009-10-20 01:30:18) [GET]
+  Parameters: {"auth_token"=>"ffa73f169a80f32832684afbebe476cc"}
+facebook.auth.getSession (0.331056118011475) generate_session_secret = 0, auth_token = ffa73f169a80f32832684afbebe476cc
+Redirected to http://localhost:3000/users/list
+Completed in 335ms | 302 Found [http://localhost/facebook/sign_in?auth_token=ffa73f169a80f32832684afbebe476cc]
+
+
+Processing UsersController#list (for 127.0.0.1 at 2009-10-20 01:30:19) [GET]
+facebook.users.getInfo (0.385106086730957) fields = status,political,pic_small,name,quotes,is_app_user,tv,profile_update_time,meeting_sex,hs_info,timezone,relationship_status,hometown_location,about_me,wall_count,significant_other_id,pic_big,music,work_history,sex,religion,notes_count,activities,pic_square,movies,has_added_app,education_history,birthday,birthday_date,first_name,meeting_for,last_name,interests,current_location,pic,books,affiliations,locale,profile_url,proxied_email,email_hashes,allowed_restrictions,pic_with_logo,pic_big_with_logo,pic_small_with_logo,pic_square_with_logo,online_presence,verified,profile_blurb,username,website,is_blocked,family, uids = 624804174
+Rendering template within layouts/users
+Rendering users/list
+Completed in 395ms (View: 7 | 200 OK [http://localhost/users/list]

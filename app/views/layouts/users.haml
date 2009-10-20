@@ -1,0 +1,19 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+%html{'xmlns' => "http://www.w3.org/1999/xhtml", 'xmlns:fb' => "http://www.facebook.com/2008/fbml"}
+  %head
+    %title
+      == Title
+    /= stylesheet_link_tag "/stylesheets/site.css"
+    = javascript_tag "window.api_key = '#{Facebooker.api_key}';"
+    = javascript_tag "window.facebook_signed_in_url = '#{ENV['FACEBOOK_SIGNED_IN_URL']}';"
+    = javascript_tag "window.facebook_connect_url = '#{ENV['FACEBOOK_CONNECT_URL']}';"
+    = javascript_tag "window.facebook_xd_receiver = '#{ENV['FACEBOOK_XD_RECEIVER']}';"
+    = javascript_include_tag "facebook", "http://static.ak.connect.facebook.com/js/api_lib/v0.4/FeatureLoader.js.php"
+    
+  %body
+    = @content_for_layout
+
+    /= javascript_tag "window.onload = function() { facebook_onload(#{!!@facebook_user}); };"
+    = javascript_include_tag "facebook_require"
