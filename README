@@ -2,4 +2,9 @@ Connectiproxy demonstrates how to use a Ruby on Rails application with Facebooke
 
 You must create a config/facebooker.yml file.
 
-In your iPhone set the public key to your public key and the proxy url to http://localhost:3000/facebook/proxy. No private key is needed in the iPhone app.
+In your iPhone app set the public key to your public key and the proxy url to http://localhost:3000/facebook/proxy. No private key is needed in the iPhone app.
+
+Connectiproxy has been tested successfully using http://github.com/ckhsponge/facebook-iphone-sdk in the iPhone simulator. This code is based on code that is live on Toonsy Net.
+
+Chris Hobbs
+http://toonsy.net 
