@@ -18,7 +18,7 @@ class FacebookController < ApplicationController
     @facebook_session = Facebooker::Session.create(Facebooker.api_key, Facebooker.secret_key)
     @facebook_session.auth_token = params['auth_token']
     secure = @facebook_session.secure_with_session_secret!
-    render :xml => auth_session_xml(@facebook_session, "secret meta data from rails app")
+    render :xml => auth_session_xml(@facebook_session, "Rails says hello.")
   end
   
   protected
